@@ -7,6 +7,7 @@ class AutoAsignacionPlugin extends MantisPlugin {
         $this->version = '1.1.0';
         $this->requires = array('MantisCore' => '2.0.0');
         $this->author = 'Andres Silva';
+        $this->url = 'https://github.com/andressrdev/AutoAsignacion';
     }
 
     public function hooks() {
@@ -41,7 +42,7 @@ class AutoAsignacionPlugin extends MantisPlugin {
             echo '</div>';
 
             $nuevo_asignado = null;
-
+            
             if ($category_id == 1906 && $assigned_user_id == 39) {
                 $nuevo_asignado = 382;
             } elseif ($category_id == 1907 && $assigned_user_id == 39) {
